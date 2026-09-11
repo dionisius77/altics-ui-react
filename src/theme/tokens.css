@@ -114,8 +114,8 @@
   --color-destructive-alias: #a54c4c;
   --color-destructive-foreground-alias: #ffffff;
 
-  --color-focus-ring: #183976;
-  --color-focus-ring-error: #ef4444;
+  --color-focus-ring: 218.94 66.2% 27.84%;
+  --color-focus-ring-error: 0 84.24% 60.2%;
 }
 
 .dark {

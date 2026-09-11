@@ -58,7 +58,10 @@ export default {
         },
         border: "hsl(var(--color-border) / <alpha-value>)",
         input: "hsl(var(--color-input) / <alpha-value>)",
-        ring: "hsl(var(--color-ring) / <alpha-value>)",
+        ring: {
+          DEFAULT: "hsl(var(--color-focus-ring) / <alpha-value>)",
+          error: "hsl(var(--color-focus-ring-error) / <alpha-value>)",
+        },
         placeholder: "--color-placeholder / <alpha-value>)",
         destructive: {
           DEFAULT: "hsl(var(--color-destructive) / <alpha-value>)",

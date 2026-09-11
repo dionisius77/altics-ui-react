@@ -13,6 +13,7 @@ import {
   Text,
 } from "../src";
 import { TextExamples } from "../src/components/typography/Text.examples";
+import { ButtonExamples } from "../src/components/button/Button.examples";
 function App() {
   const [dark, setDark] = useState(false);
   return (
@@ -27,7 +28,7 @@ function App() {
         <Stack>
           <Button
             className="self-start"
-            variant="outline"
+            variant="primary"
             onClick={() => setDark(!dark)}
           >
             Toggle theme
@@ -43,16 +44,18 @@ function App() {
                 <Input className=" focus:border-1 focus:border-brand-500" placeholder="Email address" />
                 <Textarea placeholder="Message" />
                 <div className="flex gap-2">
-                  <Button>Save</Button>
+                  <Button>Primary</Button>
                   <Button variant="secondary">
-                    Saving
+                    Secondary
                   </Button>
-                  <Button disabled variant="outline">
+                  <Button variant="tertiary">Tertiary</Button>
+                  <Button variant="link-color">
                     Disabled
                   </Button>
                 </div>
                 <Skeleton className="h-8 w-48" />
                 <TextExamples />
+                <ButtonExamples />
                 <Card className="shadow-xs"><Card.Content className="p-8"><Text>Shadow XS Card</Text></Card.Content></Card>
                 <Card className="shadow-sm"><Card.Content className="p-8"><Text>Shadow SM Card</Text></Card.Content></Card>
                 <Card className="shadow-md"><Card.Content className="p-8"><Text>Shadow MD Card</Text></Card.Content></Card>
