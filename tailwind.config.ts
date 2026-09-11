@@ -111,19 +111,54 @@ export default {
         '.shadow-xl': {
           boxShadow: '0 3px 3px -1.5px rgba(0, 0, 0, 0.04), 0 8px 8px -4px rgba(0, 0, 0, 0.03), 0 20px 24px -4px rgba(0, 0, 0, 0.08)',
         },
-
-        '.ds-glass': {
-          backdropFilter: 'blur(12px)',
-          WebkitBackdropFilter: 'blur(12px)', // Safari support
-          backgroundColor: 'rgba(255, 255, 255, 0.5)',
+        '.radius-xxs': {
+          borderRadius: '2px',
+        },
+        '.radius-xs': {
+          borderRadius: '4px',
+        },
+        '.radius-sm': {
+          borderRadius: '6px',
+        },
+        '.radius-md': {
+          borderRadius: '8px',
+        },
+        '.radius-lg': {
+          borderRadius: '10px',
+        },
+        '.radius-xl': {
+          borderRadius: '12px',
+        },
+        '.radius-2xl': {
+          borderRadius: '16px',
+        },
+        '.radius-3xl': {
+          borderRadius: '20px',
+        },
+        '.radius-4xl': {
+          borderRadius: '24px',
+        },
+        '.radius-full': {
+          borderRadius: '9999px',
+        },
+        '.backdrop-blur-sm': {
+          backdropFilter: 'blur(8px)',
+          WebkitBackdropFilter: 'blur(8px)',
+        },
+        '.backdrop-blur-md': {
+          backdropFilter: 'blur(16px)',
+          WebkitBackdropFilter: 'blur(16px)',
+        },
+        '.backdrop-blur-lg': {
+          backdropFilter: 'blur(24px)',
+          WebkitBackdropFilter: 'blur(24px)',
+        },
+        '.backdrop-blur-xl': {
+          backdropFilter: 'blur(40px)',
+          WebkitBackdropFilter: 'blur(40px)',
         },
 
-        '.ds-focus': {
-          outline: 'none',
-        },
-        '.ds-focus:focus-visible': {
-          boxShadow: `0 0 0 2px ${theme('colors.white')}, 0 0 0 4px ${theme('colors.brand.500')}`,
-        }
+
       })
     })
   ],

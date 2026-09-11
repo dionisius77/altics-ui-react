@@ -44,7 +44,7 @@ function App() {
                 <Textarea placeholder="Message" />
                 <div className="flex gap-2">
                   <Button>Save</Button>
-                  <Button loading variant="secondary">
+                  <Button variant="secondary">
                     Saving
                   </Button>
                   <Button disabled variant="outline">

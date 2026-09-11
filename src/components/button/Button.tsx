@@ -6,8 +6,8 @@ export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   loading?: boolean;
 };
 const variants = {
-  primary: "bg-primary text-white hover:bg-primary/90",
-  secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+  primary: "bg-primary-900 text-white hover:bg-brand-secondary shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05),0px_-2px_0px_0px_rgba(0,0,0,0.05)_inset,0px_0px_0px_1.5px_rgba(0,0,0,0.18)_inset,0px_1.5px_0px_0px_rgba(255,255,255,0.12)_inset] active:shadow-[0px_0px_0px_1px_rgba(0,0,0,0.18)_inset,0px_2px_3px_0px_rgba(0,0,0,0.2)_inset]",
+  secondary: "border border-neutral-300 text-secondary shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05),0px_-2px_0px_0px_rgba(0,0,0,0.05)_inset,0px_0px_0px_1px_rgba(0,0,0,0.18)_inset]",
   outline: "border border-input bg-background hover:bg-muted",
   ghost: "hover:bg-muted",
   destructive:
@@ -37,7 +37,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       type={type}
       disabled={disabled || loading}
       className={cn(
-        "inline-flex items-center justify-center gap-2 rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+        "inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
         variants[variant],
         sizes[size],
         className,

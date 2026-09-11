@@ -113,6 +113,9 @@
   --color-ring-alias: #1d3d72;
   --color-destructive-alias: #a54c4c;
   --color-destructive-foreground-alias: #ffffff;
+
+  --color-focus-ring: #183976;
+  --color-focus-ring-error: #ef4444;
 }
 
 .dark {

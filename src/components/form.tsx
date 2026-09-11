@@ -6,7 +6,7 @@ import {
 } from "react";
 import { cn } from "../lib/cn";
 const field =
-  "flex w-full rounded-md border border-input px-3 py-2 text-sm text-primary placeholder:text-placeholder focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50";
+  "flex w-full rounded-md border border-input px-3 py-2 text-sm text-primary placeholder:text-placeholder focus:focus-ring outline-none disabled:cursor-not-allowed disabled:opacity-50";
 export type InputProps = InputHTMLAttributes<HTMLInputElement> & {
   error?: boolean;
 };
