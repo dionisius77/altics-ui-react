@@ -13,17 +13,17 @@
   --color-destructive: 0 72% 51%;
   --color-destructive-foreground: 210 40% 98%;
 
-  --color-primary-50: #f0f4f9;
-  --color-primary-100: #d9e2ef;
-  --color-primary-200: #c2cfe6;
-  --color-primary-300: #a8b7d8;
-  --color-primary-400: #8e9ecb;
-  --color-primary-500: #7485bd;
-  --color-primary-600: #5a6db0;
-  --color-primary-700: #4055a2;
-  --color-primary-800: #2d3d8f;
-  --color-primary-900: #1d3d72;
-  --color-primary-950: #162d5a;
+  --color-primary-50: #EFF3FB;
+  --color-primary-100: #D1E8FF;
+  --color-primary-200: #9CC4F2;
+  --color-primary-300: #7EAAE4;
+  --color-primary-400: #224A8A;
+  --color-primary-500: #183976;
+  --color-primary-600: #1D3D72;
+  --color-primary-700: #183562;
+  --color-primary-800: #142C52;
+  --color-primary-900: #102341;
+  --color-primary-950: #0C1A31;
   --color-primary-1000: #0f1f38;
 
   --color-secondary-50: #f0f9f8;
@@ -76,6 +76,7 @@
   --color-border-light: #ebebeb;
   --color-border-dark: #a6a6a6;
 
+  --color-bg-primary: #ffffff;
   --color-bg-white: #ffffff;
   --color-bg-brand-solid: #1d3d72;
   --color-bg-neutral-50: #fafafa;
@@ -133,17 +134,18 @@
   --color-destructive: 0 63% 31%;
   --color-destructive-foreground: 210 40% 98%;
 
-  --color-primary-50: #0f1f38;
-  --color-primary-100: #162d5a;
-  --color-primary-200: #1d3d72;
-  --color-primary-300: #2d3d8f;
-  --color-primary-400: #4055a2;
-  --color-primary-500: #5a6db0;
-  --color-primary-600: #7485bd;
-  --color-primary-700: #8e9ecb;
-  --color-primary-800: #a8b7d8;
-  --color-primary-900: #c2cfe6;
-  --color-primary-950: #d9e2ef;
+  --color-primary-50: #EFF3FB;
+  --color-primary-100: #D1E8FF;
+  --color-primary-200: #9CC4F2;
+  --color-primary-300: #7EAAE4;
+  --color-primary-400: #224A8A;
+  --color-primary-500: #183976;
+  --color-primary-600: #1D3D72;
+  --color-primary-700: #183562;
+  --color-primary-800: #142C52;
+  --color-primary-900: #102341;
+  --color-primary-950: #0C1A31;
+  --color-primary-1000: #0f1f38;
 
   --color-secondary-50: #164d7a;
   --color-secondary-100: #1d6592;
@@ -189,6 +191,7 @@
   --color-border-light: #1a1a1a;
   --color-border-dark: #5a5a5a;
 
+  --color-bg-primary: #0A0A0A;
   --color-bg-white: #1a1a1a;
   --color-bg-brand-solid: #2d3d8f;
   --color-bg-neutral-50: #0a0a0a;

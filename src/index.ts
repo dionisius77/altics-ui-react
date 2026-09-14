@@ -1,5 +1,5 @@
 import "./styles/index.css";
-export { Button, type ButtonProps } from "./components/button";
+export { Button, IconButton, LinkButton, type ButtonProps, type IconButtonProps, type LinkButtonProps } from "./components/button";
 export {
   Input,
   Textarea,

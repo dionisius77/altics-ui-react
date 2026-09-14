@@ -4,9 +4,9 @@ import { cn } from "../../lib/cn";
 /**
  * Button variant type
  * 
- * @typedef {"primary" | "secondary" | "tertiary" | "link-color" | "link-gray"} ButtonVariant
+ * @typedef {"primary" | "secondary" | "tertiary"} ButtonVariant
  */
-export type ButtonVariant = "primary" | "secondary" | "tertiary" | "link-color" | "link-gray";
+export type ButtonVariant = "primary" | "secondary" | "tertiary";
 
 /**
  * Button size type
@@ -28,8 +28,6 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
    * @option "primary" - Solid brand color with shadow, primary action
    * @option "secondary" - Bordered style with shadow, secondary action
    * @option "tertiary" - Text-only, minimal style
-   * @option "link-color" - Link styled in brand secondary color
-   * @option "link-gray" - Link styled in gray/tertiary color
    */
   variant?: ButtonVariant;
 
@@ -67,17 +65,22 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
    * @default undefined
    */
   trailingIcon?: ReactNode;
+
+  /**
+   * Button text content
+   * Alternative to using children; displays the text in the button
+   * @default undefined
+   */
+  text?: string;
 }
 
 /**
  * Button variant styles
  */
 const variantStyles: Record<ButtonVariant, string> = {
-  primary: "bg-primary-900 text-white hover:bg-brand-secondary shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05),0px_-2px_0px_0px_rgba(0,0,0,0.05)_inset,0px_0px_0px_1.5px_rgba(0,0,0,0.18)_inset,0px_1.5px_0px_0px_rgba(255,255,255,0.12)_inset] active:shadow-[0px_0px_0px_1px_rgba(0,0,0,0.18)_inset,0px_2px_3px_0px_rgba(0,0,0,0.2)_inset]",
+  primary: "bg-primary-600 text-white hover:bg-brand-secondary shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05),0px_-2px_0px_0px_rgba(0,0,0,0.05)_inset,0px_0px_0px_1.5px_rgba(0,0,0,0.18)_inset,0px_1.5px_0px_0px_rgba(255,255,255,0.12)_inset] active:shadow-[0px_0px_0px_1px_rgba(0,0,0,0.18)_inset,0px_2px_3px_0px_rgba(0,0,0,0.2)_inset]",
   secondary: "border border-neutral-300 hover:bg-neutral-50 text-secondary shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05),0px_-2px_0px_0px_rgba(0,0,0,0.05)_inset,0px_0px_0px_1px_rgba(0,0,0,0.18)_inset]",
   tertiary: "text-tertiary hover:bg-neutral-50",
-  "link-color": "text-brand-secondary hover:text-brand-secondary-hover",
-  "link-gray": "text-tertiary hover:text-tertiary",
 };
 
 /**
@@ -100,28 +103,32 @@ const sizeStyles: Record<ButtonSize, string> = {
  * @component
  * 
  * @example
- * // Primary button (default)
- * <Button>Click me</Button>
+ * // Primary button (default) using text prop
+ * <Button text="Click me" />
  * 
  * @example
- * // With icons
- * <Button leadingIcon={<IconCheck />}>Save</Button>
- * <Button trailingIcon={<IconArrow />}>Next</Button>
+ * // With icons and text prop
+ * <Button text="Save" leadingIcon={<IconCheck />} />
+ * <Button text="Next" trailingIcon={<IconArrow />} />
  * 
  * @example
  * // Different variants and sizes
- * <Button variant="primary" size="lg">Large Primary</Button>
- * <Button variant="secondary" size="md">Medium Secondary</Button>
- * <Button variant="tertiary" size="sm">Small Tertiary</Button>
- * <Button variant="link-color">Link Color</Button>
+ * <Button variant="primary" size="lg" text="Large Primary" />
+ * <Button variant="secondary" size="md" text="Medium Secondary" />
+ * <Button variant="tertiary" size="sm" text="Small Tertiary" />
+ * <Button variant="link-color" text="Link Color" />
  * 
  * @example
  * // Loading state (icons are hidden)
- * <Button loading leadingIcon={<IconCheck />}>Processing...</Button>
+ * <Button loading text="Processing..." leadingIcon={<IconCheck />} />
  * 
  * @example
  * // With custom className
- * <Button className="custom-class">Custom</Button>
+ * <Button text="Custom" className="custom-class" />
+ * 
+ * @example
+ * // Using children as alternative to text prop
+ * <Button>Click me</Button>
  */
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   (
@@ -133,6 +140,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       disabled,
       leadingIcon,
       trailingIcon,
+      text,
       children,
       type = "button",
       ...props
@@ -166,7 +174,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           className="h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent"
         />
       )}
-      {children}
+      {text || children}
       {!loading && trailingIcon && (
         <span className="flex items-center justify-center">{trailingIcon}</span>
       )}

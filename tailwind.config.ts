@@ -11,7 +11,7 @@ export default {
         background: "hsl(var(--color-background) / <alpha-value>)",
         foreground: "hsl(var(--color-foreground) / <alpha-value>)",
         primary: {
-          DEFAULT: "hsl(var(--color-primary) / <alpha-value>)",
+          DEFAULT: "var(--color-bg-primary)",
           foreground: "hsl(var(--color-primary-foreground) / <alpha-value>)",
           50: "var(--color-primary-50)",
           100: "var(--color-primary-100)",

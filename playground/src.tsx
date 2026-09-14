@@ -7,6 +7,8 @@ import {
   Card,
   Container,
   Input,
+  IconButton,
+  LinkButton,
   Skeleton,
   Stack,
   Textarea,
@@ -14,13 +16,15 @@ import {
 } from "../src";
 import { TextExamples } from "../src/components/typography/Text.examples";
 import { ButtonExamples } from "../src/components/button/Button.examples";
+import { IconButtonExamples } from "../src/components/button/IconButton.examples";
+import { LinkButtonExamples } from "../src/components/button/LinkButton.examples";
 function App() {
   const [dark, setDark] = useState(false);
   return (
     <main
       className={
         dark
-          ? "dark min-h-screen bg-background py-10 text-foreground"
+          ? "dark min-h-screen bg-primary py-10 text-foreground"
           : "min-h-screen bg-white py-10 text-foreground"
       }
     >
@@ -49,13 +53,13 @@ function App() {
                     Secondary
                   </Button>
                   <Button variant="tertiary">Tertiary</Button>
-                  <Button variant="link-color">
-                    Disabled
-                  </Button>
+                  <LinkButton color="color">Link Color</LinkButton>
                 </div>
                 <Skeleton className="h-8 w-48" />
                 <TextExamples />
                 <ButtonExamples />
+                <IconButtonExamples />
+                <LinkButtonExamples />
                 <Card className="shadow-xs"><Card.Content className="p-8"><Text>Shadow XS Card</Text></Card.Content></Card>
                 <Card className="shadow-sm"><Card.Content className="p-8"><Text>Shadow SM Card</Text></Card.Content></Card>
                 <Card className="shadow-md"><Card.Content className="p-8"><Text>Shadow MD Card</Text></Card.Content></Card>

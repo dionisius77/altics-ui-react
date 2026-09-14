@@ -30,11 +30,9 @@ export function ButtonExamples() {
         </Text>
         <div className="space-y-4">
           <div className="flex flex-wrap gap-3">
-            <Button variant="primary">Primary</Button>
-            <Button variant="secondary">Secondary</Button>
-            <Button variant="tertiary">Tertiary</Button>
-            <Button variant="link-color">Link Color</Button>
-            <Button variant="link-gray">Link Gray</Button>
+            <Button variant="primary" text="Primary" />
+            <Button variant="secondary" text="Secondary" />
+            <Button variant="tertiary" text="Tertiary" />
           </div>
         </div>
       </div>
@@ -46,11 +44,11 @@ export function ButtonExamples() {
         </Text>
         <div className="space-y-4">
           <div className="flex flex-wrap items-center gap-3">
-            <Button size="xs">Extra Small</Button>
-            <Button size="sm">Small</Button>
-            <Button size="md">Medium</Button>
-            <Button size="lg">Large</Button>
-            <Button size="xl">Extra Large</Button>
+            <Button size="xs" text="Extra Small" />
+            <Button size="sm" text="Small" />
+            <Button size="md" text="Medium" />
+            <Button size="lg" text="Large" />
+            <Button size="xl" text="Extra Large" />
           </div>
         </div>
       </div>
@@ -65,11 +63,11 @@ export function ButtonExamples() {
         <div className="mb-6">
           <Text weight="semibold" className="mb-2">Primary</Text>
           <div className="flex flex-wrap items-center gap-2">
-            <Button variant="primary" size="xs">XS</Button>
-            <Button variant="primary" size="sm">SM</Button>
-            <Button variant="primary" size="md">MD</Button>
-            <Button variant="primary" size="lg">LG</Button>
-            <Button variant="primary" size="xl">XL</Button>
+            <Button variant="primary" size="xs" text="XS" />
+            <Button variant="primary" size="sm" text="SM" />
+            <Button variant="primary" size="md" text="MD" />
+            <Button variant="primary" size="lg" text="LG" />
+            <Button variant="primary" size="xl" text="XL" />
           </div>
         </div>
 
@@ -77,11 +75,11 @@ export function ButtonExamples() {
         <div className="mb-6">
           <Text weight="semibold" className="mb-2">Secondary</Text>
           <div className="flex flex-wrap items-center gap-2">
-            <Button variant="secondary" size="xs">XS</Button>
-            <Button variant="secondary" size="sm">SM</Button>
-            <Button variant="secondary" size="md">MD</Button>
-            <Button variant="secondary" size="lg">LG</Button>
-            <Button variant="secondary" size="xl">XL</Button>
+            <Button variant="secondary" size="xs" text="XS" />
+            <Button variant="secondary" size="sm" text="SM" />
+            <Button variant="secondary" size="md" text="MD" />
+            <Button variant="secondary" size="lg" text="LG" />
+            <Button variant="secondary" size="xl" text="XL" />
           </div>
         </div>
 
@@ -89,11 +87,11 @@ export function ButtonExamples() {
         <div className="mb-6">
           <Text weight="semibold" className="mb-2">Tertiary</Text>
           <div className="flex flex-wrap items-center gap-2">
-            <Button variant="tertiary" size="xs">XS</Button>
-            <Button variant="tertiary" size="sm">SM</Button>
-            <Button variant="tertiary" size="md">MD</Button>
-            <Button variant="tertiary" size="lg">LG</Button>
-            <Button variant="tertiary" size="xl">XL</Button>
+            <Button variant="tertiary" size="xs" text="XS" />
+            <Button variant="tertiary" size="sm" text="SM" />
+            <Button variant="tertiary" size="md" text="MD" />
+            <Button variant="tertiary" size="lg" text="LG" />
+            <Button variant="tertiary" size="xl" text="XL" />
           </div>
         </div>
       </div>
@@ -157,26 +155,18 @@ export function ButtonExamples() {
           <div>
             <Text weight="semibold" className="mb-2">Disabled</Text>
             <div className="flex flex-wrap gap-3">
-              <Button disabled>Disabled Primary</Button>
-              <Button variant="secondary" disabled>
-                Disabled Secondary
-              </Button>
-              <Button variant="tertiary" disabled>
-                Disabled Tertiary
-              </Button>
+              <Button disabled text="Disabled Primary" />
+              <Button variant="secondary" disabled text="Disabled Secondary" />
+              <Button variant="tertiary" disabled text="Disabled Tertiary" />
             </div>
           </div>
 
           <div>
             <Text weight="semibold" className="mb-2">Loading</Text>
             <div className="flex flex-wrap gap-3">
-              <Button loading>Loading Primary</Button>
-              <Button variant="secondary" loading>
-                Loading Secondary
-              </Button>
-              <Button variant="tertiary" loading>
-                Loading Tertiary
-              </Button>
+              <Button loading text="Loading Primary" />
+              <Button variant="secondary" loading text="Loading Secondary" />
+              <Button variant="tertiary" loading text="Loading Tertiary" />
             </div>
           </div>
 
@@ -205,27 +195,15 @@ export function ButtonExamples() {
         </Text>
         <div className="space-y-4">
           <div className="flex flex-wrap gap-3">
-            <Button size="lg" leadingIcon={<IconPlus />}>
-              Create New
-            </Button>
-            <Button variant="secondary" size="md" leadingIcon={<IconCheck />}>
-              Save Changes
-            </Button>
-            <Button variant="tertiary" size="sm">
-              Cancel
-            </Button>
+            <Button size="lg" leadingIcon={<IconPlus />} text="Create New" />
+            <Button variant="secondary" size="md" leadingIcon={<IconCheck />} text="Save Changes" />
+            <Button variant="tertiary" size="sm" text="Cancel" />
           </div>
 
           <div className="flex flex-wrap gap-3">
-            <Button size="lg" trailingIcon={<IconArrow />}>
-              Get Started
-            </Button>
-            <Button variant="link-color" size="md">
-              Learn More
-            </Button>
-            <Button variant="link-gray" size="sm">
-              Help
-            </Button>
+            <Button size="lg" trailingIcon={<IconArrow />} text="Get Started" />
+            <Button variant="secondary" size="md" text="View Details" />
+            <Button variant="tertiary" size="sm" text="Skip" />
           </div>
         </div>
       </div>
