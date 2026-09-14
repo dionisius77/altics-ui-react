@@ -1,0 +1,24 @@
+import type { SVGProps } from "react";
+
+export type ChevronSelectorVerticalIconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function ChevronSelectorVerticalIcon({ size = 24, ...props }: ChevronSelectorVerticalIconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <path d="M16.2929 14.293C16.6834 13.9025 17.3164 13.9025 17.707 14.293C18.0975 14.6835 18.0975 15.3165 17.707 15.707L12.707 20.707C12.3164 21.0976 11.6834 21.0976 11.2929 20.707L6.29289 15.707C5.90237 15.3165 5.90237 14.6835 6.29289 14.293C6.68342 13.9025 7.31643 13.9025 7.70696 14.293L11.9999 18.5859L16.2929 14.293ZM11.3691 3.22462C11.7618 2.90427 12.3408 2.92686 12.707 3.29298L17.707 8.29298C18.0975 8.6835 18.0975 9.31652 17.707 9.70704C17.3164 10.0976 16.6834 10.0976 16.2929 9.70704L11.9999 5.41407L7.70696 9.70704C7.31643 10.0976 6.68342 10.0976 6.29289 9.70704C5.90237 9.31652 5.90237 8.6835 6.29289 8.29298L11.2929 3.29298L11.3691 3.22462Z" fill="currentColor"/>
+    </svg>
+  );
+}
+
+ChevronSelectorVerticalIcon.displayName = "ChevronSelectorVerticalIcon";

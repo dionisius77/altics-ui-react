@@ -1,0 +1,24 @@
+import type { SVGProps } from "react";
+
+export type Heading02IconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function Heading02Icon({ size = 24, ...props }: Heading02IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <path d="M11.5 3C12.0523 3 12.5 3.44772 12.5 4C12.5 4.55228 12.0523 5 11.5 5H10.5V11H17V5H16C15.4477 5 15 4.55228 15 4C15 3.44772 15.4477 3 16 3H20C20.5523 3 21 3.44772 21 4C21 4.55228 20.5523 5 20 5H19V19H20C20.5523 19 21 19.4477 21 20C21 20.5523 20.5523 21 20 21H16C15.4477 21 15 20.5523 15 20C15 19.4477 15.4477 19 16 19H17V13H10.5V19H11.5C12.0523 19 12.5 19.4477 12.5 20C12.5 20.5523 12.0523 21 11.5 21H4C3.44772 21 3 20.5523 3 20C3 19.4477 3.44772 19 4 19H5V5H4C3.44772 5 3 4.55228 3 4C3 3.44772 3.44772 3 4 3H11.5ZM7 19H8.5V5H7V19Z" fill="currentColor"/>
+    </svg>
+  );
+}
+
+Heading02Icon.displayName = "Heading02Icon";

@@ -1,0 +1,31 @@
+import type { SVGProps } from "react";
+
+export type WarehouseAlt1IconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function WarehouseAlt1Icon({ size = 24, ...props }: WarehouseAlt1IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <g clipPath="url(#WarehouseAlt1Icon-clip0_13426_12023)">
+<path d="M24 9.72302V21.5C24 22.881 22.881 24 21.5 24C20.119 24 19 22.881 19 21.5V12C19 11.448 18.552 11 18 11H6C5.448 11 5 11.448 5 12V21.5C5 22.881 3.881 24 2.5 24C1.119 24 0 22.881 0 21.5V9.72302C0 8.06102 0.826 6.50802 2.203 5.57902L9.203 0.855018C10.893 -0.285982 13.107 -0.285982 14.797 0.855018L21.797 5.57902C23.174 6.50902 24 8.06202 24 9.72302ZM10 20H9C8.447 20 8 20.448 8 21V23C8 23.552 8.447 24 9 24H10C10.553 24 11 23.552 11 23V21C11 20.448 10.553 20 10 20ZM10 14H9C8.447 14 8 14.448 8 15V17C8 17.552 8.447 18 9 18H10C10.553 18 11 17.552 11 17V15C11 14.448 10.553 14 10 14ZM15 20H14C13.447 20 13 20.448 13 21V23C13 23.552 13.447 24 14 24H15C15.553 24 16 23.552 16 23V21C16 20.448 15.553 20 15 20Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="WarehouseAlt1Icon-clip0_13426_12023">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+    </svg>
+  );
+}
+
+WarehouseAlt1Icon.displayName = "WarehouseAlt1Icon";

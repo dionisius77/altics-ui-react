@@ -1,0 +1,24 @@
+import type { SVGProps } from "react";
+
+export type Cloud02IconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function Cloud02Icon({ size = 24, ...props }: Cloud02IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <path d="M21 14.5C21 12.966 20.0127 11.6595 18.6357 11.1875L18.959 10.2412L17.9648 10.3486C17.6408 7.34179 15.0934 5 12 5C8.68629 5 6 7.68629 6 11C6 11.0361 6.00034 11.0724 6.00098 11.1084C6.009 11.5712 5.69829 11.9795 5.25 12.0947C3.95555 12.4276 3 13.6033 3 15C3 16.6569 4.34315 18 6 18H17.5C19.433 18 21 16.433 21 14.5ZM18.6357 11.1875C18.2685 11.0616 18.0064 10.7346 17.9648 10.3486L18.959 10.2422L18.6357 11.1875ZM23 14.5C23 17.5376 20.5376 20 17.5 20H6C3.23858 20 1 17.7614 1 15C1 12.9397 2.24542 11.1723 4.02344 10.4062C4.3273 6.26531 7.78148 3 12 3C15.917 3 19.1734 5.81477 19.8633 9.53223C21.7173 10.4158 23 12.3071 23 14.5Z" fill="currentColor"/>
+    </svg>
+  );
+}
+
+Cloud02Icon.displayName = "Cloud02Icon";

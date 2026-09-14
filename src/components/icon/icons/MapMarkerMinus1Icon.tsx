@@ -1,0 +1,24 @@
+import type { SVGProps } from "react";
+
+export type MapMarkerMinus1IconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function MapMarkerMinus1Icon({ size = 24, ...props }: MapMarkerMinus1IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <path d="M19.7884 3.28114C15.542 -1.03825 8.59809 -1.0975 4.2787 3.14886C-0.0406926 7.39522 -0.0999422 14.3391 4.14642 18.6585C4.1992 18.7122 4.25254 18.7654 4.3064 18.818L8.23771 22.4502C10.3394 24.5062 13.6962 24.5146 15.8082 22.4691L19.7884 18.791C24.0712 14.508 24.0712 7.56416 19.7884 3.28114ZM16.0216 12.0331H8.04529C7.49465 12.0331 7.04826 11.5867 7.04826 11.0361C7.04826 10.4855 7.49465 10.0391 8.04529 10.0391H16.0216C16.5722 10.0391 17.0186 10.4855 17.0186 11.0361C17.0186 11.5867 16.5722 12.0331 16.0216 12.0331Z" fill="currentColor"/>
+    </svg>
+  );
+}
+
+MapMarkerMinus1Icon.displayName = "MapMarkerMinus1Icon";

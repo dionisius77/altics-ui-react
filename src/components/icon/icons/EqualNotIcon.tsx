@@ -1,0 +1,24 @@
+import type { SVGProps } from "react";
+
+export type EqualNotIconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function EqualNotIcon({ size = 24, ...props }: EqualNotIconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <path d="M18.293 4.29295C18.6835 3.90243 19.3165 3.90243 19.707 4.29295C20.0976 4.68348 20.0976 5.31649 19.707 5.70702L17.4141 7.99999H19C19.5523 7.99999 20 8.4477 20 8.99999C20 9.55227 19.5523 9.99999 19 9.99999H15.4141L11.4141 14H19C19.5523 14 20 14.4477 20 15C20 15.5523 19.5523 16 19 16H9.41406L5.70703 19.707C5.31651 20.0975 4.68349 20.0975 4.29297 19.707C3.90244 19.3165 3.90244 18.6835 4.29297 18.293L6.58594 16H5C4.44772 16 4 15.5523 4 15C4 14.4477 4.44772 14 5 14H8.58594L12.5859 9.99999H5C4.44772 9.99999 4 9.55227 4 8.99999C4 8.4477 4.44772 7.99999 5 7.99999H14.5859L18.293 4.29295Z" fill="currentColor"/>
+    </svg>
+  );
+}
+
+EqualNotIcon.displayName = "EqualNotIcon";

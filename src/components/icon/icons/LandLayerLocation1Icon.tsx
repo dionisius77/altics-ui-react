@@ -1,0 +1,31 @@
+import type { SVGProps } from "react";
+
+export type LandLayerLocation1IconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function LandLayerLocation1Icon({ size = 24, ...props }: LandLayerLocation1IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <g clipPath="url(#LandLayerLocation1Icon-clip0_13426_12057)">
+<path d="M16.949 2.05C15.628 0.728 13.87 0 12 0C10.13 0 8.37202 0.728 7.05002 2.05C4.32102 4.779 4.32102 9.22 7.05802 11.957L9.55302 14.397C10.228 15.057 11.114 15.387 12 15.387C12.886 15.387 13.772 15.057 14.447 14.397L16.949 11.949C18.271 10.627 19 8.869 19 6.999C19 5.129 18.271 3.373 16.949 2.05ZM12 9.99C10.343 9.99 9.00002 8.647 9.00002 6.99C9.00002 5.333 10.343 3.99 12 3.99C13.657 3.99 15 5.333 15 6.99C15 8.647 13.657 9.99 12 9.99ZM24 16.762C24.002 17.116 23.817 17.444 23.515 17.625L13.654 23.542C13.144 23.848 12.572 24.001 12.001 24.001C11.43 24.001 10.857 23.848 10.348 23.542L0.485016 17.625C0.182016 17.443 -0.00198386 17.115 1.61395e-05 16.762C0.00201614 16.409 0.190016 16.083 0.495016 15.905L5.35002 13.063C5.45002 13.173 5.55302 13.282 5.65902 13.388L8.15402 15.827C9.18202 16.833 10.549 17.388 12 17.388C13.451 17.388 14.817 16.833 15.846 15.827L18.364 13.364C18.462 13.266 18.558 13.165 18.651 13.063L23.505 15.904C23.81 16.083 23.998 16.41 24 16.762Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="LandLayerLocation1Icon-clip0_13426_12057">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+    </svg>
+  );
+}
+
+LandLayerLocation1Icon.displayName = "LandLayerLocation1Icon";

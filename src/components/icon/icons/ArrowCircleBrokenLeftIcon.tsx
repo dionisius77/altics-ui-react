@@ -1,0 +1,24 @@
+import type { SVGProps } from "react";
+
+export type ArrowCircleBrokenLeftIconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function ArrowCircleBrokenLeftIcon({ size = 24, ...props }: ArrowCircleBrokenLeftIconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <path d="M1 12C1 5.92487 5.92487 1 12 1C16.0727 1 19.6268 3.21393 21.5273 6.49902C21.8038 6.97699 21.6409 7.58861 21.1631 7.86523C20.6851 8.14172 20.0735 7.97879 19.7969 7.50098C18.2392 4.80826 15.33 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C15.33 21 18.2392 19.1917 19.7969 16.499C20.0735 16.0212 20.6851 15.8583 21.1631 16.1348C21.6409 16.4114 21.8038 17.023 21.5273 17.501C19.6268 20.7861 16.0727 23 12 23C5.92487 23 1 18.0751 1 12ZM11.293 7.29297C11.6835 6.90246 12.3165 6.90248 12.707 7.29297C13.0976 7.68349 13.0976 8.31651 12.707 8.70703L10.4141 11H22C22.5523 11 23 11.4477 23 12C23 12.5523 22.5523 13 22 13H10.4141L12.707 15.293C13.0976 15.6835 13.0976 16.3165 12.707 16.707C12.3165 17.0975 11.6835 17.0975 11.293 16.707L7.29297 12.707C6.90249 12.3165 6.90249 11.6835 7.29297 11.293L11.293 7.29297Z" fill="currentColor"/>
+    </svg>
+  );
+}
+
+ArrowCircleBrokenLeftIcon.displayName = "ArrowCircleBrokenLeftIcon";

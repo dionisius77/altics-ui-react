@@ -1,0 +1,24 @@
+import type { SVGProps } from "react";
+
+export type BarChart04IconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function BarChart04Icon({ size = 24, ...props }: BarChart04IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <path d="M2 21V11C2 10.4477 2.44772 10 3 10C3.55228 10 4 10.4477 4 11V21C4 21.5523 3.55228 22 3 22C2.44772 22 2 21.5523 2 21ZM8 21V3C8 2.44772 8.44772 2 9 2C9.55228 2 10 2.44772 10 3V21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21ZM14 21V11C14 10.4477 14.4477 10 15 10C15.5523 10 16 10.4477 16 11V21C16 21.5523 15.5523 22 15 22C14.4477 22 14 21.5523 14 21ZM20 21V3C20 2.44772 20.4477 2 21 2C21.5523 2 22 2.44772 22 3V21C22 21.5523 21.5523 22 21 22C20.4477 22 20 21.5523 20 21Z" fill="currentColor"/>
+    </svg>
+  );
+}
+
+BarChart04Icon.displayName = "BarChart04Icon";

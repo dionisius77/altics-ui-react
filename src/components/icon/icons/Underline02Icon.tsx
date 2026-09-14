@@ -1,0 +1,24 @@
+import type { SVGProps } from "react";
+
+export type Underline02IconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function Underline02Icon({ size = 24, ...props }: Underline02IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <path d="M20 20C20.5523 20 21 20.4477 21 21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21C3 20.4477 3.44772 20 4 20H20ZM7.5 5H6V10C6 12.5185 7.55244 14.6727 9.75195 15.5625C8.35849 14.1231 7.5 12.1625 7.5 10V5ZM9.5 10C9.5 12.7036 11.2895 14.9902 13.75 15.7393C16.2098 14.9902 18 12.7048 18 10V5H17C16.4477 5 16 4.55228 16 4C16 3.44772 16.4477 3 17 3H21C21.5523 3 22 3.44772 22 4C22 4.55228 21.5523 5 21 5H20V10C20 14.4183 16.4183 18 12 18C7.58172 18 4 14.4183 4 10V5H3C2.44772 5 2 4.55228 2 4C2 3.44772 2.44772 3 3 3H10.5C11.0523 3 11.5 3.44772 11.5 4C11.5 4.55228 11.0523 5 10.5 5H9.5V10Z" fill="currentColor"/>
+    </svg>
+  );
+}
+
+Underline02Icon.displayName = "Underline02Icon";

@@ -1,0 +1,24 @@
+import type { SVGProps } from "react";
+
+export type TruckArrowRight1IconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function TruckArrowRight1Icon({ size = 24, ...props }: TruckArrowRight1IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <path d="M19.942 20C19.976 20.162 20 20.328 20 20.5C20 21.881 18.881 23 17.5 23C16.119 23 15 21.881 15 20.5C15 20.328 15.024 20.162 15.058 20H19.943H19.942ZM4.057 20C4.023 20.162 3.999 20.328 3.999 20.5C3.999 21.881 5.118 23 6.499 23C7.88 23 8.999 21.881 8.999 20.5C8.999 20.328 8.975 20.162 8.941 20H4.057ZM14.999 18V6C14.999 3.239 12.76 1 9.999 1H4.999C2.239 1 0 3.239 0 6V9H8.036L6.268 7.232C5.877 6.841 5.877 6.208 6.268 5.818C6.659 5.427 7.291 5.427 7.682 5.818L10.45 8.586C11.23 9.366 11.23 10.634 10.45 11.414L7.682 14.182C7.487 14.377 7.231 14.475 6.975 14.475C6.719 14.475 6.463 14.377 6.268 14.182C5.877 13.791 5.877 13.159 6.268 12.768L8.036 11H0V14C0 16.209 1.791 18 4 18H15H14.999ZM16.999 18H19.999C22.208 18 23.999 16.209 23.999 14V13H16.999V18ZM18.999 5H16.999V11H23.999V10C23.999 7.239 21.76 5 18.999 5Z" fill="currentColor"/>
+    </svg>
+  );
+}
+
+TruckArrowRight1Icon.displayName = "TruckArrowRight1Icon";

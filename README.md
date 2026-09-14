@@ -23,6 +23,22 @@ The stylesheet follows the system preference by default. Add `light` or `dark` t
 
 Available components: Button, Input, Textarea, Label, Card, Badge, Avatar, Separator, Alert, Spinner, Skeleton, Stack, Container, and Grid.
 
+## Tailwind preset
+
+Component styles ship compiled, but custom design tokens (`p-xxs`, `rounded-4xl`, `max-w-container-desktop`, …) only exist in your markup if your Tailwind build knows the theme. Add the preset:
+
+```ts
+// tailwind.config.ts (ESM-only)
+import preset from "@altics/ui/tailwind-preset";
+
+export default {
+  content: ["./src/**/*.{ts,tsx}"],
+  presets: [preset],
+};
+```
+
+Works from ESM configs (CJS `require()` is not supported — the preset ships as pure ESM). Your own `content` globs and `extend` additions compose on top — the preset deliberately ships no `content` of its own. Raw values stay available as CSS variables regardless (e.g. `style={{ padding: "var(--spacing-xxs)" }}`).
+
 ## Development and publishing
 
 ```bash

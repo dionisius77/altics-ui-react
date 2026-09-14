@@ -1,0 +1,31 @@
+import type { SVGProps } from "react";
+
+export type LocationPinParkingIconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function LocationPinParkingIcon({ size = 24, ...props }: LocationPinParkingIconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <g clipPath="url(#LocationPinParkingIcon-clip0_13426_11926)">
+<path d="M12.5 6H10.5C9.39705 6 8.50005 6.897 8.50005 8V16C8.50005 16.553 8.94805 17 9.50005 17C10.052 17 10.5 16.553 10.5 16V14H12.5C14.706 14 16.5 12.206 16.5 10C16.5 7.794 14.706 6 12.5 6ZM12.5 12H10.5V8H12.5C13.603 8 14.5 8.897 14.5 10C14.5 11.103 13.603 12 12.5 12ZM19.778 3.222C17.7 1.145 14.938 0 12 0C9.06205 0 6.30005 1.145 4.22205 3.222C-0.0669525 7.511 -0.0669525 14.489 4.25005 18.806L8.19305 22.448C9.21705 23.449 10.568 24.001 12 24.001C13.432 24.001 14.783 23.449 15.787 22.468L19.779 18.78C24.068 14.491 24.068 7.512 19.779 3.223L19.778 3.222ZM18.392 17.337L14.408 21.018C13.112 22.286 10.908 22.305 9.57105 20.998L5.63605 17.364C2.12705 13.854 2.12705 8.145 5.63605 4.635C7.33605 2.936 9.59605 1.999 12 1.999C14.404 1.999 16.664 2.936 18.364 4.635C21.873 8.145 21.873 13.856 18.392 17.337Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="LocationPinParkingIcon-clip0_13426_11926">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+    </svg>
+  );
+}
+
+LocationPinParkingIcon.displayName = "LocationPinParkingIcon";

@@ -1,0 +1,24 @@
+import type { SVGProps } from "react";
+
+export type Bold01IconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function Bold01Icon({ size = 24, ...props }: Bold01IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <path d="M18 16C18 14.3431 16.6569 13 15 13H7V19H15C16.6569 19 18 17.6569 18 16ZM17 8C17 6.34315 15.6569 5 14 5H7V11H14C15.6569 11 17 9.65685 17 8ZM19 8C19 9.43116 18.3973 10.7204 17.4336 11.6318C18.9645 12.4866 20 14.1221 20 16C20 18.7614 17.7614 21 15 21H6C5.44772 21 5 20.5523 5 20V4C5 3.44772 5.44772 3 6 3H14C16.7614 3 19 5.23858 19 8Z" fill="currentColor"/>
+    </svg>
+  );
+}
+
+Bold01Icon.displayName = "Bold01Icon";

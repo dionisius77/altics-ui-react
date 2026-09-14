@@ -1,0 +1,24 @@
+import type { SVGProps } from "react";
+
+export type LetterSpacing01IconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function LetterSpacing01Icon({ size = 24, ...props }: LetterSpacing01IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <path d="M2 21V3C2 2.44772 2.44772 2 3 2C3.55228 2 4 2.44772 4 3V21C4 21.5523 3.55228 22 3 22C2.44772 22 2 21.5523 2 21ZM20 21V3C20 2.44772 20.4477 2 21 2C21.5523 2 22 2.44772 22 3V21C22 21.5523 21.5523 22 21 22C20.4477 22 20 21.5523 20 21ZM11.3369 5.8623C11.7025 5.68222 12.1235 5.65989 12.5029 5.79492L12.6631 5.8623L12.793 5.93652C13.0768 6.12045 13.2352 6.38077 13.3174 6.52539C13.4229 6.71113 13.5312 6.9521 13.6387 7.18848L17.9102 16.5859C18.1386 17.0886 17.9166 17.6815 17.4141 17.9102C16.9114 18.1386 16.3185 17.9166 16.0898 17.4141L14.5381 14H9.46191L7.91016 17.4141C7.68152 17.9166 7.08862 18.1386 6.58594 17.9102C6.08336 17.6815 5.86135 17.0886 6.08984 16.5859L10.3613 7.18848C10.4688 6.9521 10.5771 6.71113 10.6826 6.52539C10.7766 6.36003 10.9701 6.04304 11.3369 5.8623ZM10.3711 12H13.6289L12 8.41504L10.3711 12Z" fill="currentColor"/>
+    </svg>
+  );
+}
+
+LetterSpacing01Icon.displayName = "LetterSpacing01Icon";

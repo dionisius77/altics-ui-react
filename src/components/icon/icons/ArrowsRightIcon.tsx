@@ -1,0 +1,24 @@
+import type { SVGProps } from "react";
+
+export type ArrowsRightIconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function ArrowsRightIcon({ size = 24, ...props }: ArrowsRightIconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <path d="M15.293 12.293C15.6835 11.9025 16.3165 11.9025 16.707 12.293L20.707 16.293C21.0976 16.6835 21.0976 17.3166 20.707 17.7071L16.707 21.7071C16.3165 22.0976 15.6835 22.0976 15.293 21.7071C14.9024 21.3166 14.9024 20.6835 15.293 20.293L17.5859 18H4C3.44772 18 3 17.5523 3 17C3 16.4478 3.44772 16 4 16H17.5859L15.293 13.7071C14.9024 13.3166 14.9024 12.6835 15.293 12.293ZM10.293 2.29302C10.6835 1.90249 11.3165 1.90249 11.707 2.29302L15.707 6.29302C16.0976 6.68354 16.0976 7.31655 15.707 7.70708L11.707 11.7071C11.3165 12.0976 10.6835 12.0976 10.293 11.7071C9.90244 11.3166 9.90244 10.6835 10.293 10.293L12.5859 8.00005H4C3.44772 8.00005 3 7.55233 3 7.00005C3 6.44776 3.44772 6.00005 4 6.00005H12.5859L10.293 3.70708C9.90244 3.31655 9.90244 2.68354 10.293 2.29302Z" fill="currentColor"/>
+    </svg>
+  );
+}
+
+ArrowsRightIcon.displayName = "ArrowsRightIcon";

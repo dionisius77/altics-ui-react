@@ -1,0 +1,24 @@
+import type { SVGProps } from "react";
+
+export type ChevronRightIconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function ChevronRightIcon({ size = 24, ...props }: ChevronRightIconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <path d="M8.29289 5.29302C8.68342 4.90249 9.31643 4.90249 9.70696 5.29302L15.707 11.293C16.0975 11.6835 16.0975 12.3166 15.707 12.7071L9.70696 18.7071C9.31643 19.0976 8.68342 19.0976 8.29289 18.7071C7.90237 18.3166 7.90237 17.6835 8.29289 17.293L13.5859 12L8.29289 6.70708C7.90237 6.31655 7.90237 5.68354 8.29289 5.29302Z" fill="currentColor"/>
+    </svg>
+  );
+}
+
+ChevronRightIcon.displayName = "ChevronRightIcon";

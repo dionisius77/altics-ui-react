@@ -1,0 +1,31 @@
+import type { SVGProps } from "react";
+
+export type Shelves1IconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function Shelves1Icon({ size = 24, ...props }: Shelves1IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <g clipPath="url(#Shelves1Icon-clip0_13426_12027)">
+<path d="M17.5 0C16.119 0 15 1.119 15 2.5V7H2V1C2 0.448 1.552 0 1 0C0.448 0 0 0.448 0 1V23C0 23.552 0.448 24 1 24C1.552 24 2 23.552 2 23V21H22V23C22 23.552 22.448 24 23 24C23.552 24 24 23.552 24 23V1C24 0.448 23.552 0 23 0H17.5ZM22 19H18V14C18 12.895 17.105 12 16 12H12C10.895 12 10 12.895 10 14V19H8V14C8 12.895 7.105 12 6 12H2V9H22V19Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="Shelves1Icon-clip0_13426_12027">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+    </svg>
+  );
+}
+
+Shelves1Icon.displayName = "Shelves1Icon";

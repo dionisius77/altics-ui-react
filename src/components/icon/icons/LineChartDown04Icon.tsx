@@ -1,0 +1,24 @@
+import type { SVGProps } from "react";
+
+export type LineChartDown04IconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function LineChartDown04Icon({ size = 24, ...props }: LineChartDown04IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <path d="M20 15.5137L14.1074 11.3057L11.0068 14.4072C10.4883 14.9257 9.67089 14.9936 9.07422 14.5674L4 10.9424V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V15.5137ZM20 6C20 4.89543 19.1046 4 18 4H6C4.89543 4 4 4.89543 4 6V8.48535L9.8916 12.6934L12.9932 9.59277L13.0938 9.5C13.5783 9.09585 14.2671 9.03937 14.8115 9.3584L14.9258 9.43262L20 13.0566V6ZM22 18C22 20.2091 20.2091 22 18 22H6C3.79086 22 2 20.2091 2 18V6C2 3.79086 3.79086 2 6 2H18C20.2091 2 22 3.79086 22 6V18Z" fill="currentColor"/>
+    </svg>
+  );
+}
+
+LineChartDown04Icon.displayName = "LineChartDown04Icon";

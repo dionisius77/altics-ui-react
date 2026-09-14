@@ -1,0 +1,24 @@
+import type { SVGProps } from "react";
+
+export type PalletAltIconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function PalletAltIcon({ size = 24, ...props }: PalletAltIconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <path d="M24 20V21C24 21.553 23.553 22 23 22C22.447 22 22 21.553 22 21V20C22 19.448 21.552 19 21 19H13V21C13 21.553 12.552 22 12 22C11.448 22 11 21.553 11 21V19H3C2.449 19 2 19.448 2 20V21C2 21.553 1.552 22 1 22C0.448 22 0 21.553 0 21V20C0 18.346 1.346 17 3 17H21C22.654 17 24 18.346 24 20ZM0 12V6C0 4.346 1.346 3 3 3H9C10.654 3 12 4.346 12 6V12C12 13.654 10.654 15 9 15H3C1.346 15 0 13.654 0 12ZM2 12C2 12.552 2.449 13 3 13H9C9.551 13 10 12.552 10 12V6C10 5.448 9.551 5 9 5H3C2.449 5 2 5.448 2 6V12ZM24 8V12C24 13.654 22.654 15 21 15H17C15.346 15 14 13.654 14 12V8C14 6.346 15.346 5 17 5H21C22.654 5 24 6.346 24 8ZM22 8C22 7.448 21.552 7 21 7H17C16.448 7 16 7.448 16 8V12C16 12.552 16.448 13 17 13H21C21.552 13 22 12.552 22 12V8Z" fill="currentColor"/>
+    </svg>
+  );
+}
+
+PalletAltIcon.displayName = "PalletAltIcon";

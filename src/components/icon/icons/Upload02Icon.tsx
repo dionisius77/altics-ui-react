@@ -1,0 +1,24 @@
+import type { SVGProps } from "react";
+
+export type Upload02IconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function Upload02Icon({ size = 24, ...props }: Upload02IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <path d="M11 21V9.41406L6.70703 13.707C6.31651 14.0976 5.68349 14.0976 5.29297 13.707C4.90244 13.3165 4.90244 12.6835 5.29297 12.293L11.293 6.29297L11.3662 6.22656C11.5442 6.08073 11.7679 6 12 6C12.2652 6 12.5195 6.10543 12.707 6.29297L18.707 12.293C19.0976 12.6835 19.0976 13.3165 18.707 13.707C18.3165 14.0976 17.6835 14.0976 17.293 13.707L13 9.41406V21C13 21.5523 12.5523 22 12 22C11.4477 22 11 21.5523 11 21ZM21 2C21.5523 2 22 2.44772 22 3C22 3.55228 21.5523 4 21 4H3C2.44772 4 2 3.55228 2 3C2 2.44772 2.44772 2 3 2H21Z" fill="currentColor"/>
+    </svg>
+  );
+}
+
+Upload02Icon.displayName = "Upload02Icon";

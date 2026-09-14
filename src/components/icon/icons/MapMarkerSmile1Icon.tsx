@@ -1,0 +1,24 @@
+import type { SVGProps } from "react";
+
+export type MapMarkerSmile1IconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function MapMarkerSmile1Icon({ size = 24, ...props }: MapMarkerSmile1IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <path d="M19.778 3.222C17.7 1.145 14.938 0 12 0C9.062 0 6.299 1.145 4.222 3.222C2.144 5.299 1 8.061 1 11C1 13.939 2.144 16.7 4.25 18.805L8.193 22.448C9.216 23.449 10.568 24 12 24C13.432 24 14.784 23.449 15.787 22.467L19.779 18.778C21.857 16.7 23.001 13.938 23.001 11C23.001 8.062 21.855 5.299 19.778 3.222ZM14.5 7C15.328 7 16 7.672 16 8.5C16 9.328 15.328 10 14.5 10C13.672 10 13 9.328 13 8.5C13 7.672 13.672 7 14.5 7ZM9.5 7C10.328 7 11 7.672 11 8.5C11 9.328 10.328 10 9.5 10C8.672 10 8 9.328 8 8.5C8 7.672 8.672 7 9.5 7ZM16.707 13.05C15.45 14.307 13.778 15 12 15C10.222 15 8.55 14.308 7.293 13.05C6.902 12.659 6.902 12.027 7.293 11.636C7.684 11.245 8.316 11.245 8.707 11.636C9.586 12.515 10.756 13 12 13C13.244 13 14.414 12.516 15.293 11.636C15.684 11.245 16.316 11.245 16.707 11.636C17.098 12.027 17.098 12.659 16.707 13.05Z" fill="currentColor"/>
+    </svg>
+  );
+}
+
+MapMarkerSmile1Icon.displayName = "MapMarkerSmile1Icon";

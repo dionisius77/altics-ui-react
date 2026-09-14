@@ -1,0 +1,24 @@
+import type { SVGProps } from "react";
+
+export type Toggle03LeftIconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function Toggle03LeftIcon({ size = 24, ...props }: Toggle03LeftIconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <path d="M21 12C21 9.23858 18.7614 7 16 7H8C5.23858 7 3 9.23858 3 12C3 14.7614 5.23858 17 8 17H16C18.7614 17 21 14.7614 21 12ZM9.5 12C9.5 11.1716 8.82843 10.5 8 10.5C7.17157 10.5 6.5 11.1716 6.5 12C6.5 12.8284 7.17157 13.5 8 13.5C8.82843 13.5 9.5 12.8284 9.5 12ZM11.5 12C11.5 13.933 9.933 15.5 8 15.5C6.067 15.5 4.5 13.933 4.5 12C4.5 10.067 6.067 8.5 8 8.5C9.933 8.5 11.5 10.067 11.5 12ZM23 12C23 15.866 19.866 19 16 19H8C4.13401 19 1 15.866 1 12C1 8.13401 4.13401 5 8 5H16C19.866 5 23 8.13401 23 12Z" fill="currentColor"/>
+    </svg>
+  );
+}
+
+Toggle03LeftIcon.displayName = "Toggle03LeftIcon";

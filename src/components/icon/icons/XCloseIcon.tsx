@@ -1,0 +1,24 @@
+import type { SVGProps } from "react";
+
+export type XCloseIconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function XCloseIcon({ size = 24, ...props }: XCloseIconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <path d="M17.2929 5.29295C17.6834 4.90243 18.3164 4.90243 18.707 5.29295C19.0975 5.68348 19.0975 6.31649 18.707 6.70702L13.414 12L18.707 17.293C19.0975 17.6835 19.0975 18.3165 18.707 18.707C18.3164 19.0975 17.6834 19.0975 17.2929 18.707L11.9999 13.414L6.70696 18.707C6.31643 19.0975 5.68342 19.0975 5.29289 18.707C4.90237 18.3165 4.90237 17.6835 5.29289 17.293L10.5859 12L5.29289 6.70702C4.90237 6.31649 4.90237 5.68348 5.29289 5.29295C5.68342 4.90243 6.31643 4.90243 6.70696 5.29295L11.9999 10.5859L17.2929 5.29295Z" fill="currentColor"/>
+    </svg>
+  );
+}
+
+XCloseIcon.displayName = "XCloseIcon";

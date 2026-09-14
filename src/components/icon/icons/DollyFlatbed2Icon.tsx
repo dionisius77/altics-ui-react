@@ -1,0 +1,31 @@
+import type { SVGProps } from "react";
+
+export type DollyFlatbed2IconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function DollyFlatbed2Icon({ size = 24, ...props }: DollyFlatbed2IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <g clipPath="url(#DollyFlatbed2Icon-clip0_13426_12011)">
+<path d="M16 8H14V3H16V8ZM23 7V12C23 14.206 21.206 16 19 16H11C8.794 16 7 14.206 7 12V7C7 4.794 8.794 3 11 3H12V8C12 9.103 12.897 10 14 10H16C17.103 10 18 9.103 18 8V3H19C21.206 3 23 4.794 23 7ZM23 18H8C6.346 18 5 16.654 5 15V4C5 1.794 3.206 0 1 0C0.448 0 0 0.447 0 1C0 1.553 0.448 2 1 2C2.103 2 3 2.897 3 4V15C3 17.045 4.237 18.802 6 19.576V21C6 22.654 7.346 24 9 24C10.654 24 12 22.654 12 21V20H17V21C17 22.654 18.346 24 20 24C21.654 24 23 22.654 23 21V20C23.552 20 24 19.553 24 19C24 18.447 23.552 18 23 18Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="DollyFlatbed2Icon-clip0_13426_12011">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+    </svg>
+  );
+}
+
+DollyFlatbed2Icon.displayName = "DollyFlatbed2Icon";

@@ -1,0 +1,31 @@
+import type { SVGProps } from "react";
+
+export type DeliveryTruck1IconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function DeliveryTruck1Icon({ size = 24, ...props }: DeliveryTruck1IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <g clipPath="url(#DeliveryTruck1Icon-clip0_13426_12034)">
+<path d="M8.535 1.465C7.591 0.521 6.335 0 5 0C3.665 0 2.408 0.521 1.465 1.465C0.521 2.408 0 3.664 0 5C0 6.336 0.521 7.592 1.473 8.543L3.235 10.267C3.721 10.744 4.361 10.982 5.001 10.982C5.641 10.982 6.28 10.744 6.767 10.267L8.537 8.536C9.481 7.593 10.002 6.337 10.002 5.001C10.002 3.665 9.481 2.41 8.537 1.466L8.535 1.465ZM5 6.5C4.172 6.5 3.5 5.828 3.5 5C3.5 4.172 4.172 3.5 5 3.5C5.828 3.5 6.5 4.172 6.5 5C6.5 5.828 5.828 6.5 5 6.5ZM8.942 21C8.976 21.162 9 21.328 9 21.5C9 22.881 7.881 24 6.5 24C5.119 24 4 22.881 4 21.5C4 21.328 4.024 21.162 4.058 21H8.942ZM4 19C1.791 19 0 17.209 0 15V9.891C0.026 9.918 1.835 11.695 1.835 11.695C2.681 12.524 3.806 12.981 5 12.981C6.194 12.981 7.319 12.524 8.164 11.696L9.948 9.95C11.271 8.629 12 6.871 12 5C12 4.032 11.801 3.096 11.429 2.232C13.489 2.85 15 4.738 15 7V19H4ZM19.942 21C19.976 21.162 20 21.328 20 21.5C20 22.881 18.881 24 17.5 24C16.119 24 15 22.881 15 21.5C15 21.328 15.024 21.162 15.058 21H19.943H19.942ZM24 11V12H17V6H19C21.761 6 24 8.239 24 11ZM17 14H24V15C24 17.209 22.209 19 20 19H17V14Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="DeliveryTruck1Icon-clip0_13426_12034">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+    </svg>
+  );
+}
+
+DeliveryTruck1Icon.displayName = "DeliveryTruck1Icon";

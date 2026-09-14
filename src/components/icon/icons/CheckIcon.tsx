@@ -1,0 +1,24 @@
+import type { SVGProps } from "react";
+
+export type CheckIconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function CheckIcon({ size = 24, ...props }: CheckIconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <path d="M19.2929 5.29295C19.6834 4.90243 20.3164 4.90243 20.707 5.29295C21.0975 5.68348 21.0975 6.31649 20.707 6.70702L9.70696 17.707C9.31643 18.0975 8.68342 18.0975 8.29289 17.707L3.29289 12.707C2.90237 12.3165 2.90237 11.6835 3.29289 11.293C3.68342 10.9024 4.31643 10.9024 4.70696 11.293L8.99992 15.5859L19.2929 5.29295Z" fill="currentColor"/>
+    </svg>
+  );
+}
+
+CheckIcon.displayName = "CheckIcon";

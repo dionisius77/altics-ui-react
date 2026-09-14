@@ -1,0 +1,31 @@
+import type { SVGProps } from "react";
+
+export type LocationCrosshairsIconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function LocationCrosshairsIcon({ size = 24, ...props }: LocationCrosshairsIconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <g clipPath="url(#LocationCrosshairsIcon-clip0_13426_11902)">
+<path d="M12 7C9.243 7 7 9.243 7 12C7 14.757 9.243 17 12 17C14.757 17 17 14.757 17 12C17 9.243 14.757 7 12 7ZM12 15C10.346 15 9 13.654 9 12C9 10.346 10.346 9 12 9C13.654 9 15 10.346 15 12C15 13.654 13.654 15 12 15ZM23 11H21.95C21.479 6.283 17.717 2.52 13 2.05V1C13 0.447 12.552 0 12 0C11.448 0 11 0.447 11 1V2.05C6.283 2.52 2.52 6.283 2.05 11H1C0.448 11 0 11.447 0 12C0 12.553 0.448 13 1 13H2.05C2.521 17.717 6.283 21.48 11 21.95V23C11 23.553 11.448 24 12 24C12.552 24 13 23.553 13 23V21.95C17.717 21.479 21.48 17.717 21.95 13H23C23.552 13 24 12.553 24 12C24 11.447 23.552 11 23 11ZM12 20C7.589 20 4 16.411 4 12C4 7.589 7.589 4 12 4C16.411 4 20 7.589 20 12C20 16.411 16.411 20 12 20Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="LocationCrosshairsIcon-clip0_13426_11902">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+    </svg>
+  );
+}
+
+LocationCrosshairsIcon.displayName = "LocationCrosshairsIcon";

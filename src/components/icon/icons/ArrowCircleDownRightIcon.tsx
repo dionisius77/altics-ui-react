@@ -1,0 +1,24 @@
+import type { SVGProps } from "react";
+
+export type ArrowCircleDownRightIconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function ArrowCircleDownRightIcon({ size = 24, ...props }: ArrowCircleDownRightIconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <path d="M21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12ZM8.29297 8.29297C8.68347 7.90247 9.3165 7.90251 9.70703 8.29297L14 12.5859V9C14 8.4478 14.4478 8.0001 15 8C15.5523 8 16 8.44774 16 9V15C16 15.5523 15.5523 16 15 16H9C8.4478 15.9999 8 15.5522 8 15C8.00003 14.4478 8.44782 14.0001 9 14H12.5859L8.29297 9.70703C7.90255 9.31654 7.90259 8.68348 8.29297 8.29297ZM23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12Z" fill="currentColor"/>
+    </svg>
+  );
+}
+
+ArrowCircleDownRightIcon.displayName = "ArrowCircleDownRightIcon";

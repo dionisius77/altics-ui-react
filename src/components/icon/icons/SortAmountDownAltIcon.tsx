@@ -1,0 +1,31 @@
+import type { SVGProps } from "react";
+
+export type SortAmountDownAltIconProps = SVGProps<SVGSVGElement> & {
+  size?: number;
+};
+
+export function SortAmountDownAltIcon({ size = 24, ...props }: SortAmountDownAltIconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <g clipPath="url(#SortAmountDownAltIcon-clip0_13426_6967)">
+<path d="M24.0002 1C24.0002 1.553 23.5522 2 23.0002 2H10.0002C9.44821 2 9.00021 1.553 9.00021 1C9.00021 0.447 9.44821 0 10.0002 0H23.0002C23.5522 0 24.0002 0.447 24.0002 1ZM20.0002 5H10.0002C9.44821 5 9.00021 5.447 9.00021 6C9.00021 6.553 9.44821 7 10.0002 7H20.0002C20.5522 7 21.0002 6.553 21.0002 6C21.0002 5.447 20.5522 5 20.0002 5ZM17.0002 10H10.0002C9.44821 10 9.00021 10.447 9.00021 11C9.00021 11.553 9.44821 12 10.0002 12H17.0002C17.5522 12 18.0002 11.553 18.0002 11C18.0002 10.447 17.5522 10 17.0002 10ZM14.0002 15H10.0002C9.44821 15 9.00021 15.447 9.00021 16C9.00021 16.553 9.44821 17 10.0002 17H14.0002C14.5522 17 15.0002 16.553 15.0002 16C15.0002 15.447 14.5522 15 14.0002 15ZM7.70721 19.293L6.00021 21V1C6.00021 0.447 5.55221 0 5.00021 0C4.44821 0 4.00021 0.447 4.00021 1V21L2.29221 19.292C1.90121 18.901 1.26921 18.901 0.878211 19.292C0.487211 19.683 0.487211 20.315 0.878211 20.706L3.58521 23.413C3.97521 23.803 4.48721 23.998 5.00021 23.998C5.51321 23.998 6.02421 23.803 6.41421 23.413L9.12121 20.706C9.51221 20.315 9.51221 19.683 9.12121 19.292C8.73021 18.901 8.09821 18.902 7.70721 19.293Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="SortAmountDownAltIcon-clip0_13426_6967">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+    </svg>
+  );
+}
+
+SortAmountDownAltIcon.displayName = "SortAmountDownAltIcon";
