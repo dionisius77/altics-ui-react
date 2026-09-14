@@ -71,6 +71,14 @@ export interface LinkButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>
    * @default undefined
    */
   text?: string;
+
+  /**
+   * Custom text color
+   * When provided, overrides the default color variant
+   * Accepts any valid CSS color value (hex, rgb, hsl, named colors, CSS variables, etc.)
+   * @default undefined (uses color variant default)
+   */
+  textColor?: string;
 }
 
 /**
@@ -141,6 +149,8 @@ export const LinkButton = forwardRef<HTMLButtonElement, LinkButtonProps>(
       text,
       children,
       type = "button",
+      textColor,
+      style,
       ...props
     },
     ref,
@@ -149,6 +159,10 @@ export const LinkButton = forwardRef<HTMLButtonElement, LinkButtonProps>(
       ref={ref}
       type={type}
       disabled={disabled || loading}
+      style={{
+        ...(textColor && { color: textColor }),
+        ...style,
+      }}
       className={cn(
         // Base button styles
         "inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-150",

@@ -193,9 +193,9 @@ export function LinkButtonExamples() {
           <div>
             <Text weight="semibold" className="mb-2">Inline Links</Text>
             <div className="flex flex-wrap gap-2">
-              <span>Read our</span>
+              <Text>Read our</Text>
               <LinkButton size="md" color="color" text="privacy policy" />
-              <span>or</span>
+              <Text>or</Text>
               <LinkButton size="md" color="color" text="terms of service" />
             </div>
           </div>

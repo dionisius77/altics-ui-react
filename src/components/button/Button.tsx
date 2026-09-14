@@ -72,6 +72,22 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
    * @default undefined
    */
   text?: string;
+
+  /**
+   * Custom background color
+   * When provided, overrides the default variant background color
+   * Accepts any valid CSS color value
+   * @default undefined (uses variant default)
+   */
+  backgroundColor?: string;
+
+  /**
+   * Custom text color
+   * When provided, overrides the default variant text color
+   * Accepts any valid CSS color value
+   * @default undefined (uses variant default)
+   */
+  textColor?: string;
 }
 
 /**
@@ -143,6 +159,9 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       text,
       children,
       type = "button",
+      backgroundColor,
+      textColor,
+      style,
       ...props
     },
     ref,
@@ -151,6 +170,11 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       ref={ref}
       type={type}
       disabled={disabled || loading}
+      style={{
+        ...(backgroundColor && { backgroundColor }),
+        ...(textColor && { color: textColor }),
+        ...style,
+      }}
       className={cn(
         // Base button styles
         "inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-150",
