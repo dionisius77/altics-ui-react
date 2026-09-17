@@ -88,18 +88,31 @@ Alert.displayName = "Alert";
 export const Spinner = ({
   className,
   label = "Loading",
+  size = 20,
 }: {
   className?: string;
   label?: string;
+  /** Diameter in pixels. Set here rather than by class, so a caller's size
+   * always wins over the default. */
+  size?: number;
 }) => (
   <span
     role="status"
     aria-label={label}
-    className={cn(
-      "inline-block h-5 w-5 animate-spin rounded-full border-2 border-current border-t-transparent",
-      className,
-    )}
-  />
+    style={{ width: size, height: size }}
+    className={cn("relative inline-block", className)}
+  >
+    {/* Track at 30%, arc solid, both from the current colour: this is how the
+        sheets draw a spinner, and it stays tintable by the caller. */}
+    <span
+      aria-hidden="true"
+      className="absolute inset-0 rounded-full border-2 border-current opacity-30"
+    />
+    <span
+      aria-hidden="true"
+      className="absolute inset-0 animate-spin rounded-full border-2 border-transparent border-t-current"
+    />
+  </span>
 );
 export const Skeleton = ({
   className,

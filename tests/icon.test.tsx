@@ -66,9 +66,7 @@ describe("Icon (static)", () => {
 
   it("exports every SVG as a component (codegen drift guard)", () => {
     const svgCount = Object.keys(svgModules).length;
-    const componentCount = Object.values(IconsBarrel).filter(
-      (v) => typeof v === "function",
-    ).length;
+    const componentCount = Object.values(IconsBarrel).filter((v) => typeof v === "function").length;
     expect(svgCount).toBeGreaterThan(0);
     expect(componentCount).toBe(svgCount);
   });

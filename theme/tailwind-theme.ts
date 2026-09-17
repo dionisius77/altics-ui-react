@@ -62,12 +62,16 @@ export const themeExtend = {
     border: "hsl(var(--color-border) / <alpha-value>)",
     input: "hsl(var(--color-input) / <alpha-value>)",
     ring: "hsl(var(--color-ring) / <alpha-value>)",
-    placeholder: "--color-placeholder / <alpha-value>)",
+    placeholder: "hsl(var(--color-placeholder) / <alpha-value>)",
     destructive: {
       DEFAULT: "hsl(var(--color-destructive) / <alpha-value>)",
       foreground:
         "hsl(var(--color-destructive-foreground) / <alpha-value>)",
     },
+    // Focus ring colours from the sheets (brand-500 / red-500). The tokens
+    // existed but were never reachable as utilities.
+    focus: "hsl(var(--color-focus-ring) / <alpha-value>)",
+    "focus-error": "hsl(var(--color-focus-ring-error) / <alpha-value>)",
     // Tailwind 4.3 default colors
     slate: {
       50: "var(--color-slate-50)",
@@ -380,6 +384,12 @@ export const themeExtend = {
     link: "var(--color-text-link)",
     "link-hover": "var(--color-text-link-hover)",
     placeholder: "var(--color-placeholder)",
+
+    // The flat `primary` / `secondary` keys above shadow the nested
+    // colors.primary / colors.secondary objects for text utilities, which
+    // drops their `-foreground` variants. Restore them here.
+    "primary-foreground": "hsl(var(--color-primary-foreground) / <alpha-value>)",
+    "secondary-foreground": "hsl(var(--color-secondary-foreground) / <alpha-value>)",
   },
   spacing: {
     none: "var(--spacing-none)",

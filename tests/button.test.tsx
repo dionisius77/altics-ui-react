@@ -4,8 +4,6 @@ import { Button } from "../src";
 describe("Button", () => {
   it("renders disabled while loading", () => {
     render(<Button loading>Save</Button>);
-    expect(
-      screen.getByRole("button", { name: "Save" }).hasAttribute("disabled"),
-    ).toBe(true);
+    expect(screen.getByRole("button", { name: "Save" }).hasAttribute("disabled")).toBe(true);
   });
 });

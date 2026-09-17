@@ -1,12 +1,32 @@
 import "./styles/index.css";
-export { Button, IconButton, LinkButton, type ButtonProps, type IconButtonProps, type LinkButtonProps } from "./components/button";
 export {
+  Button,
+  IconButton,
+  LinkButton,
+  type ButtonProps,
+  type IconButtonProps,
+  type LinkButtonProps,
+} from "./components/button";
+export {
+  FileInput,
   Input,
+  InputDivider,
+  NumberInput,
+  OtpInput,
+  PasswordInput,
+  PinInput,
+  TagsInput,
   Textarea,
-  Label,
+  type FileInputProps,
   type InputProps,
+  type NumberInputProps,
+  type OtpInputProps,
+  type PasswordInputProps,
+  type PinInputProps,
+  type TagsInputProps,
   type TextareaProps,
-} from "./components/form";
+} from "./components/input";
+export { Field, Label, type FieldProps } from "./components/field";
 export { Card } from "./components/card";
 export {
   Badge,
